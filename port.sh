@@ -1,5 +1,5 @@
 #!/bin/bash
-gnudate() {
+port() {
     if hash netstat 2>/dev/null; then
         netstat -tulpn | grep :$1 
     else
@@ -7,3 +7,4 @@ gnudate() {
         netstat -tulpn | grep :$1 
     fi
 }
+port()
