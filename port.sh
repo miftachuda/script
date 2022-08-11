@@ -7,4 +7,4 @@ port() {
         netstat -tulpn | grep :$1 
     fi
 }
-port()
+port
